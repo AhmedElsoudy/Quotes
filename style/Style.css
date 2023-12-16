@@ -1,0 +1,89 @@
+body { 
+    background-color: rgba(0,0, 0, 0.4);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.clip{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1
+}
+.blockquote-wrapper {
+    display: flex;
+    height: 100vh;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.blockquote {
+    position: relative;
+    font-family: 'Barlow Condensed', sans-serif;
+    max-width: 620px;
+}
+
+.blockquote h1 {
+    font-family: 'Abril Fatface', cursive;
+      position: relative; /* for pseudos */
+    color: #EEF0E5;
+    font-size: 2.7rem;
+    line-height: 1.2;
+    border: 2px solid #EEF0E5;
+    border: solid 2px;
+    border-radius:20px;
+    padding: 25px;
+}
+.photo{
+    position: relative;
+    width: 30%;
+    z-index: 555;
+    top: 15px;
+}
+.blockquote .photo img{
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #EEF0E5;
+}
+.blockquote .bcolor{
+    color: #EEF0E5;
+    border: 1px solid #EEF0E5;
+}
+.blockquote h1:after {
+    content:"";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: -60px;
+    left: 50px;
+    border: 2px solid #EEF0E5;
+    border-radius: 0 50px 0 0;
+    border-bottom: none;
+    border-left: none;
+    z-index: 3; 
+}
+.blockquote h1:before {
+    content:"";
+    position: absolute;
+    width: 70px;
+    border: 2px solid #1B4242;
+    bottom: -3px;
+    left: 50px;
+    z-index: 2;
+}
+
+.blockquote h4 {
+    position: relative;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-top: 15px;
+    z-index: 1;
+    left: 200px;
+}
+
